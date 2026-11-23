@@ -1,6 +1,6 @@
 # Benchmarking differentiable hydrological models across Great Britain
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24477646.svg)](https://doi.org/10.5281/zenodo.24477646)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24477645.svg)](https://doi.org/10.5281/zenodo.24477645)
 
 Code, results and figures for the paper *Benchmarking differentiable hydrological models across Great Britain:
 performance and explainability* (in preparation).
