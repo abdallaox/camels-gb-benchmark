@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Test-period (1998 to 2008) metrics from one continuous run over the record: medians over catchments of the per-seed values (five seeds, one for the unconstrained RFL-HBV). $r$, $\alpha$ and $\beta$ are the correlation, variability ratio and mean ratio that make up KGE \citep{gupta2009}. FHV, FLV and FMS are the high-flow, low-flow and mid-slope biases of the flow duration curve \citep{yilmaz2008}.}
+\label{tab:metrics_full}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+model & catchments & NSE & KGE & $r$ & $\alpha$ & $\beta$ & bias (\%) & FHV (\%) & FLV (\%) & FMS (\%) \\
+\midrule
+LSTM & trained (536) & 0.871 & 0.859 & 0.941 & 0.92 & 0.99 & -1.4 & -9 & +8 & -3 \\
+LSTM & held-out (133) & 0.807 & 0.773 & 0.924 & 0.90 & 0.98 & -2.0 & -11 & +17 & -3 \\
+RPL-HBV & trained (536) & 0.800 & 0.797 & 0.907 & 0.90 & 1.06 & +6.1 & -10 & +79 & -19 \\
+RPL-HBV & held-out (133) & 0.757 & 0.752 & 0.886 & 0.88 & 1.06 & +5.8 & -10 & +74 & -20 \\
+RFL-HBV ($n = 16$) & trained (536) & 0.797 & 0.780 & 0.908 & 0.87 & 1.03 & +2.6 & -16 & -31 & -7 \\
+RFL-HBV ($n = 16$) & held-out (133) & 0.762 & 0.733 & 0.897 & 0.86 & 1.03 & +2.7 & -17 & -16 & -8 \\
+RFL-HBV, unconstrained & trained (536) & 0.791 & 0.764 & 0.907 & 0.86 & 1.00 & -0.3 & -14 & +24 & -11 \\
+RFL-HBV, unconstrained & held-out (133) & 0.757 & 0.704 & 0.901 & 0.87 & 1.04 & +3.6 & -15 & +24 & -10 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,58 @@
+calibration:
+  first_target_day: '1971-09-30'
+  iterations: 3000
+  method: DDS (Tolson and Shoemaker 2007), r = 0.2, greedy
+  objective: NSE, continuous simulation over the training period from the fixed initial
+    stores
+  period:
+  - '1970-10-01'
+  - '1997-12-31'
+  ranges:
+    BETA:
+    - 1.0
+    - 5.0
+    CFMAX:
+    - 1.0
+    - 6.0
+    CFR:
+    - 0.0
+    - 0.2
+    CWH:
+    - 0.0
+    - 0.2
+    FC:
+    - 50.0
+    - 500.0
+    K0:
+    - 0.1
+    - 0.9
+    K1:
+    - 0.05
+    - 0.5
+    K2:
+    - 0.0005
+    - 0.1
+    LP:
+    - 0.3
+    - 1.0
+    MAXBAS:
+    - 1.0
+    - 10.0
+    PERC:
+    - 0.5
+    - 10.0
+    SFCF:
+    - 0.5
+    - 1.5
+    TT:
+    - -2.0
+    - 2.0
+    UZL:
+    - 5.0
+    - 50.0
+  restart: 4
+  restarts: 5
+model: hbv_local
+model_kw: {}
+n_params: 9366
+seed: 4

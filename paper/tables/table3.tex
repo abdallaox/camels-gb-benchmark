@@ -1,0 +1,33 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Median test NSE (seed medians, restart medians for the LC-HBV, the 667 catchments with a test record) by catchment class, and the median paired difference between models. The LC-HBV is calibrated on every catchment.}
+\label{tab:by_type}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{llrrrrrrrr}
+\toprule
+grouping & class & $n$ & LSTM & RPL-HBV & RFL-HBV & LC-HBV & LSTM $-$ RPL & RFL $-$ RPL & LC $-$ RPL \\
+\midrule
+BFI & low & 235 & 0.85 & 0.81 & 0.80 & 0.83 & +0.038 & -0.006 & +0.014 \\
+ & mid & 220 & 0.88 & 0.82 & 0.82 & 0.84 & +0.047 & +0.001 & +0.016 \\
+ & high & 214 & 0.86 & 0.71 & 0.74 & 0.78 & +0.103 & +0.017 & +0.040 \\
+aridity & wet & 224 & 0.87 & 0.84 & 0.83 & 0.85 & +0.035 & +0.000 & +0.012 \\
+ & mid & 229 & 0.88 & 0.81 & 0.81 & 0.84 & +0.051 & -0.002 & +0.019 \\
+ & dry & 216 & 0.83 & 0.69 & 0.71 & 0.76 & +0.102 & +0.012 & +0.039 \\
+productive aquifer share & $<$10\% & 543 & 0.87 & 0.81 & 0.80 & 0.83 & +0.044 & -0.002 & +0.015 \\
+ & 10-50\% & 80 & 0.84 & 0.62 & 0.68 & 0.74 & +0.153 & +0.092 & +0.087 \\
+ & $>$50\% & 46 & 0.86 & 0.67 & 0.70 & 0.78 & +0.154 & +0.045 & +0.060 \\
+urban share & $<$2\% & 283 & 0.87 & 0.81 & 0.81 & 0.84 & +0.040 & -0.002 & +0.015 \\
+ & 2-10\% & 250 & 0.86 & 0.79 & 0.78 & 0.82 & +0.063 & +0.004 & +0.021 \\
+ & $>$10\% & 136 & 0.85 & 0.77 & 0.76 & 0.80 & +0.062 & +0.005 & +0.022 \\
+mean elevation (m) & $<$150 & 316 & 0.84 & 0.75 & 0.75 & 0.79 & +0.072 & +0.002 & +0.029 \\
+ & 150-350 & 265 & 0.89 & 0.84 & 0.84 & 0.86 & +0.040 & +0.002 & +0.014 \\
+ & $>$350 & 88 & 0.86 & 0.80 & 0.80 & 0.82 & +0.039 & -0.007 & +0.011 \\
+abstraction (\% of mean flow, England) & $<$5\% & 226 & 0.86 & 0.79 & 0.79 & 0.82 & +0.050 & -0.009 & +0.021 \\
+ & 5-20\% & 124 & 0.88 & 0.80 & 0.80 & 0.84 & +0.064 & +0.006 & +0.022 \\
+ & 20-50\% & 57 & 0.86 & 0.68 & 0.74 & 0.75 & +0.136 & +0.035 & +0.043 \\
+ & $>$50\% & 34 & 0.81 & 0.27 & 0.46 & 0.52 & +0.364 & +0.146 & +0.139 \\
+\bottomrule
+\end{tabular}}
+\end{table}

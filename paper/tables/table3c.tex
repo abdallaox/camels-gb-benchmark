@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Median test-period bias in total flow (\%), seed or restart median per catchment, by reported abstraction (surface and groundwater) as a share of the mean flow, for the 441 catchments in England with abstraction data. Positive: the model overestimates the flow.}
+\label{tab:bias_abstraction}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+model & $<$5\% ($n = 226$) & 5-20\% ($n = 124$) & 20-50\% ($n = 57$) & $>$50\% ($n = 34$) \\
+\midrule
+LSTM & -2 & -4 & -4 & +0 \\
+RPL-HBV & +6 & +7 & +13 & +32 \\
+RFL-HBV & +2 & +0 & +9 & +25 \\
+LC-HBV & +7 & +8 & +11 & +32 \\
+\bottomrule
+\end{tabular}}
+\end{table}

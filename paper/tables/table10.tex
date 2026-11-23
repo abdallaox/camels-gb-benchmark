@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{The RFL-HBV at every size $n$ (units per store and hidden neurons per gate): number of weights, median test-period NSE on the training and held-out catchments and KGE on the training catchments, median and 10th percentile of the soil store realism over all 669 catchments, median snowpack correlation in the 94 snowy catchments, and the best epoch. Seed 0 at every size except $n = 8$, which is the median over five seeds.}
+\label{tab:sweep}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{rrrrrrrrrr}
+\toprule
+$n$ & weights & seeds & NSE trained & NSE held-out & KGE trained & soil realism & soil 10th pct & snow corr. & best epoch \\
+\midrule
+2 & 569 & 1 & 0.754 & 0.739 & 0.733 & 0.768 & 0.67 & 0.39 & 134 \\
+4 & 1,185 & 1 & 0.767 & 0.740 & 0.732 & 0.746 & 0.67 & 0.57 & 149 \\
+8 & 2,561 & 5 & 0.786 & 0.754 & 0.764 & 0.742 & 0.63 & 0.51 & 130 \\
+16 & 5,889 & 1 & 0.805 & 0.778 & 0.778 & 0.738 & 0.61 & 0.56 & 124 \\
+32 & 14,849 & 1 & 0.803 & 0.775 & 0.786 & 0.725 & 0.57 & 0.55 & 79 \\
+48 & 26,881 & 1 & 0.805 & 0.768 & 0.793 & 0.715 & 0.53 & 0.50 & 68 \\
+\bottomrule
+\end{tabular}}
+\end{table}

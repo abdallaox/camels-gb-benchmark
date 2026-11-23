@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Test-period (1998 to 2008) performance on the 535 training catchments: medians over catchments of the per-seed values, with the range over five seeds in brackets (the unconstrained RFL-HBV has one seed), the share of catchments with NSE above 0.8 and below 0.5, the share of catchments in which the LSTM has the higher NSE and the median NSE difference to the LSTM (seed or restart median per catchment), the median NSE of the five-member ensemble mean, and the median percent bias and the high-flow, low-flow and mid-slope biases of the flow duration curve (FHV, FLV, FMS) of \citet{yilmaz2008}.}
+\label{tab:performance}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{lllllrrrrrrr}
+\toprule
+model & NSE & KGE & NSE $>$ 0.8 & NSE $<$ 0.5 & LSTM ahead & gap to LSTM & ensemble NSE & bias (\%) & FHV (\%) & FLV (\%) & FMS (\%) \\
+\midrule
+LSTM & 0.871 (0.867 to 0.873) & 0.859 (0.851 to 0.866) & 81\% & 1\% & -- & -- & 0.88 & -1.4 & -9 & +8 & -3 \\
+RPL-HBV & 0.800 (0.782 to 0.808) & 0.797 (0.768 to 0.806) & 50\% & 10\% & 97\% & 0.053 & 0.81 & +6.1 & -10 & +79 & -19 \\
+RFL-HBV ($n = 16$) & 0.797 (0.790 to 0.804) & 0.780 (0.775 to 0.792) & 49\% & 8\% & 98\% & 0.059 & 0.81 & +2.6 & -16 & -31 & -7 \\
+RFL-HBV, unconstrained & 0.791 & 0.764 & 46\% & 6\% & 97\% & 0.066 & -- & -0.3 & -14 & +24 & -11 \\
+LC-HBV (per catchment) & 0.822 (0.822 to 0.824) & 0.827 (0.827 to 0.830) & 60\% & 8\% & 92\% & 0.035 & -- & +6.4 & -7 & -82 & -14 \\
+\bottomrule
+\end{tabular}}
+\end{table}

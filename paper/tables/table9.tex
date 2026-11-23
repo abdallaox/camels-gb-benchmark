@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Integrated-gradient attribution of the test-period flow (24 target days per catchment, seed 0): share (\%) of the absolute attribution carried by each group of inputs, mean over catchments as in Fig.~12 of the main text, the forcings summed over the 365-day window.}
+\label{tab:xai}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+model & rainfall & temperature & PET & attributes \\
+\midrule
+LSTM & 40.7 & 4.5 & 9.8 & 45.0 \\
+RPL-HBV & 43.3 & 0.5 & 7.2 & 49.1 \\
+RFL-HBV & 49.3 & 7.2 & 10.8 & 32.8 \\
+\bottomrule
+\end{tabular}}
+\end{table}

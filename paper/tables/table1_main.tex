@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Test-period performance on the 535 training catchments, medians. LSTM ahead is the share of catchments in which the LSTM has the higher NSE, and the gap is the median NSE difference to it. Table~S5 adds the ranges over seeds.}
+\label{tab:performance_main}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+model & NSE & KGE & NSE $<$ 0.5 & LSTM ahead & gap to LSTM & FHV (\%) & FLV (\%) \\
+\midrule
+LSTM & 0.871 & 0.859 & 1\% & -- & -- & -9 & +8 \\
+RPL-HBV & 0.800 & 0.797 & 10\% & 97\% & 0.053 & -10 & +79 \\
+RFL-HBV & 0.797 & 0.780 & 8\% & 98\% & 0.059 & -16 & -31 \\
+LC-HBV & 0.822 & 0.827 & 8\% & 92\% & 0.035 & -7 & -82 \\
+\bottomrule
+\end{tabular}}
+\end{table}

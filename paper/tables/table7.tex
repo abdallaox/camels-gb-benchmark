@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Store realism, medians with the seed range in brackets. Soil: all 669 catchments, with the 10th percentile and the held-out catchments. Snow: the 94 snowy catchments, with the bias of the annual peak and the ratio of the mean snowpack to ERA5-Land.}
+\label{tab:realism}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{lllllrr}
+\toprule
+model & soil anomaly corr. & 10th pct & held-out & snow corr. & snow peak bias (\%) & snow mean ratio \\
+\midrule
+RPL-HBV & 0.82 (0.812 to 0.828) & 0.72 & 0.82 & 0.81 (0.775 to 0.825) & -29 & 0.46 \\
+LC-HBV & 0.81 (0.805 to 0.807) & 0.64 & 0.80 & 0.83 (0.821 to 0.832) & -22 & 0.55 \\
+RFL-HBV (n = 16) & 0.73 (0.720 to 0.737) & 0.58 & 0.73 & 0.47 (0.321 to 0.644) & -55 & 0.29 \\
+\bottomrule
+\end{tabular}}
+\end{table}

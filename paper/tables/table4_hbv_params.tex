@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{The 14 HBV parameters and their ranges, identical for every catchment and shared by the RPL-HBV (sigmoid outputs rescaled to the range) and the per-catchment LC-HBV (search bounds). The ranges follow the first author's earlier Python implementation of HBV (HBV\_Lab), with FC, PERC and K2 widened towards those of \citet{seibert2012} for the groundwater catchments.}
+\label{tab:hbv_params}
+\begin{tabular}{llll}
+\toprule
+parameter & description & unit & range \\
+\midrule
+TT & threshold temperature for snow & $^{\circ}$C & -2 to 2 \\
+CFMAX & degree-day melt factor & mm $^{\circ}$C$^{-1}$ d$^{-1}$ & 1 to 6 \\
+SFCF & snowfall correction factor & -- & 0.5 to 1.5 \\
+CFR & refreezing coefficient & -- & 0 to 0.2 \\
+CWH & water holding capacity of the snowpack & -- & 0 to 0.2 \\
+FC & maximum soil moisture storage & mm & 50 to 500 \\
+LP & soil moisture threshold for full evapotranspiration, fraction of FC & -- & 0.3 to 1 \\
+BETA & shape of the recharge function & -- & 1 to 5 \\
+K0 & recession coefficient, upper store above UZL & d$^{-1}$ & 0.1 to 0.9 \\
+K1 & recession coefficient, upper store & d$^{-1}$ & 0.05 to 0.5 \\
+K2 & recession coefficient, lower store & d$^{-1}$ & 0.0005 to 0.1 \\
+UZL & threshold for the fast upper-store outflow & mm & 5 to 50 \\
+PERC & maximum percolation to the lower store & mm d$^{-1}$ & 0.5 to 10 \\
+MAXBAS & length of the triangular routing function & d & 1 to 10 \\
+\bottomrule
+\end{tabular}
+\end{table}

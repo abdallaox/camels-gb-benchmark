@@ -1,0 +1,43 @@
+[project]
+name = "camels-gb-benchmark"
+version = "1.0.0"
+description = "Benchmarking differentiable HBV models against an LSTM across Great Britain: performance and explainability"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "geopandas>=1.2.0",
+    "matplotlib>=3.11.2",
+    "netcdf4>=1.7.5",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "pyarrow>=26.0.1",
+    "pyogrio>=0.13.0",
+    "pyyaml>=6.0.3",
+    "scipy>=1.18.1",
+    "tensorboard>=2.21.0",
+    "torch>=2.14.1",
+    "xarray>=2026.9.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=9.2.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gbhydro"]
+
+# On Linux take torch from the CUDA 12.6 index (kernels for older GPUs such as the V100); elsewhere the PyPI build.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu126", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

@@ -1,0 +1,25 @@
+model: lstm
+n_params: 26177
+seed: 4
+training:
+  batch_size: 256
+  clip_gradient_norm: 1.0
+  early_stopping_patience: 5
+  epochs: 30
+  learning_rate:
+    0: 0.001
+    20: 0.0005
+    25: 0.0001
+  loss: NSE
+  normalisation: train_basins_and_train_period_only
+  optimizer: Adam
+  predict_last_n: 1
+  sample_stride: 1
+  seeds:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  seq_length: 365
+  validate_n_basins: 100

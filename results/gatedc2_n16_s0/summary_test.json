@@ -1,0 +1,7 @@
+{
+ "best_epoch": 124,
+ "held-out_NSE": 0.778,
+ "held-out_KGE": 0.751,
+ "trained_NSE": 0.805,
+ "trained_KGE": 0.778
+}

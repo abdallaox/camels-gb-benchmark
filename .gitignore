@@ -1,0 +1,23 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# downloaded data and trained runs (weights are archived on Zenodo)
+data/
+runs/
+slurm/
+
+# large intermediate outputs
+results/**/*.parquet
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz

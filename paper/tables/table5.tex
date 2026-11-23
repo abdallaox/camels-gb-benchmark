@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Prediction in the 132 held-out catchments, test period, medians with the seed range in brackets. The drop is the fall in median NSE from the training catchments. *The LC-HBV is calibrated on each of these catchments and is the gauged reference.}
+\label{tab:ungauged}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{lllrrr}
+\toprule
+model & NSE & KGE & NSE $<$ 0.5 & ensemble NSE & drop from training \\
+\midrule
+LSTM & 0.81 (0.798 to 0.821) & 0.77 (0.767 to 0.791) & 15\% & 0.83 & $+$0.065 \\
+RPL-HBV & 0.76 (0.746 to 0.767) & 0.75 (0.729 to 0.756) & 21\% & 0.78 & $+$0.043 \\
+RFL-HBV ($n = 16$) & 0.76 (0.754 to 0.770) & 0.73 (0.724 to 0.752) & 17\% & 0.78 & $+$0.035 \\
+LC-HBV* & 0.83 (0.824 to 0.829) & 0.82 (0.822 to 0.826) & 13\% & -- & $-$0.004 \\
+\bottomrule
+\end{tabular}}
+\end{table}

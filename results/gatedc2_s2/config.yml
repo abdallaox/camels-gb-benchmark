@@ -1,0 +1,31 @@
+model: gated
+n_params: 2561
+seed: 2
+training:
+  batch_basins: 128
+  batch_size: 256
+  chunk_days: 365
+  clip_gradient_norm: 1.0
+  drift_penalty: 30
+  early_stopping_patience: 30
+  epochs: 150
+  learning_rate:
+    0: 0.001
+    100: 0.0005
+    130: 0.0001
+  loss: NSE
+  mode: continuous
+  normalisation: train_basins_and_train_period_only
+  optimizer: Adam
+  predict_last_n: 1
+  sample_stride: 1
+  seeds:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  seq_length: 365
+  validate_n_basins: 100
+model_kw:
+  snow_tt: 0.0

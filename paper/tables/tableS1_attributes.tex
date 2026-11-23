@@ -1,0 +1,47 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{The 33 static catchment attributes given to the regional models, with their range over the 669 study catchments. Names, descriptions and units follow \citet{coxon2020}. No attribute derived from observed flow is included.}
+\label{tab:attributes}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{lllrrrr}
+\toprule
+group & attribute & description & unit & min & median & max \\
+\midrule
+Topography & \texttt{area} & catchment area & km$^2$ & 1.63 & 152 & 9931 \\
+ & \texttt{elev\_mean} & mean elevation & m & 25.0 & 163 & 682 \\
+ & \texttt{dpsbar} & mean drainage path slope & m km$^{-1}$ & 12.3 & 78.7 & 488 \\
+Climate & \texttt{p\_mean} & mean daily precipitation & mm d$^{-1}$ & 1.54 & 2.57 & 9.61 \\
+ & \texttt{pet\_mean} & mean daily PET & mm d$^{-1}$ & 1.03 & 1.38 & 1.51 \\
+ & \texttt{aridity} & aridity, PET / P & -- & 0.12 & 0.53 & 0.96 \\
+ & \texttt{p\_seasonality} & precipitation seasonality & -- & -0.42 & -0.14 & 0.14 \\
+ & \texttt{frac\_snow} & fraction of precipitation falling as snow & -- & 0.00 & 0.02 & 0.17 \\
+ & \texttt{high\_prec\_freq} & frequency of high-precipitation days ($\geq 5 \times$ mean) & d yr$^{-1}$ & 7.58 & 15.7 & 20.7 \\
+ & \texttt{high\_prec\_dur} & mean duration of high-precipitation events & d & 1.05 & 1.14 & 1.25 \\
+ & \texttt{low\_prec\_freq} & frequency of dry days ($< 1$ mm d$^{-1}$) & d yr$^{-1}$ & 122 & 214 & 259 \\
+ & \texttt{low\_prec\_dur} & mean duration of dry periods & d & 2.64 & 3.70 & 4.67 \\
+Land cover & \texttt{dwood\_perc} & deciduous woodland & \% & 0.00 & 5.82 & 37.3 \\
+ & \texttt{ewood\_perc} & evergreen woodland & \% & 0.00 & 2.06 & 92.8 \\
+ & \texttt{grass\_perc} & grass and pasture & \% & 0.11 & 42.5 & 98.5 \\
+ & \texttt{crop\_perc} & crops & \% & 0.00 & 12.6 & 90.5 \\
+ & \texttt{urban\_perc} & urban & \% & 0.00 & 2.86 & 81.3 \\
+Soil & \texttt{sand\_perc} & sand content & \% & 19.4 & 43.4 & 81.9 \\
+ & \texttt{silt\_perc} & silt content & \% & 9.45 & 30.2 & 43.1 \\
+ & \texttt{clay\_perc} & clay content & \% & 6.87 & 23.6 & 51.2 \\
+ & \texttt{organic\_perc} & organic content & \% & 0.37 & 1.25 & 33.1 \\
+ & \texttt{porosity\_hypres} & porosity (HYPRES) & \% & 33.9 & 46.5 & 81.0 \\
+ & \texttt{conductivity\_hypres} & saturated hydraulic conductivity (HYPRES) & cm h$^{-1}$ & 0.57 & 1.38 & 3.13 \\
+ & \texttt{tawc} & total available water content & mm & 38.1 & 90.8 & 236 \\
+ & \texttt{root\_depth} & root depth & m & 0.33 & 1.10 & 1.30 \\
+ & \texttt{soil\_depth\_pelletier} & depth to bedrock & m & 0.64 & 1.31 & 41.5 \\
+Hydrogeology & \texttt{frac\_high\_perc} & fractured aquifer, highly productive & \% & 0.00 & 0.00 & 98.1 \\
+ & \texttt{frac\_mod\_perc} & fractured aquifer, moderately productive & \% & 0.00 & 0.00 & 92.9 \\
+ & \texttt{inter\_high\_perc} & intergranular aquifer, highly productive & \% & 0.00 & 0.00 & 94.2 \\
+ & \texttt{inter\_mod\_perc} & intergranular aquifer, moderately productive & \% & 0.00 & 16.2 & 92.7 \\
+ & \texttt{no\_gw\_perc} & rocks with essentially no groundwater & \% & 0.00 & 49.7 & 100 \\
+Human influence & \texttt{num\_reservoir} & number of reservoirs & -- & 0.00 & 0.00 & 18.0 \\
+ & \texttt{reservoir\_cap} & total reservoir capacity & ML & 0.00 & 0.00 & 8181419 \\
+\bottomrule
+\end{tabular}}
+\end{table}
