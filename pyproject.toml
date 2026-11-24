@@ -1,7 +1,7 @@
 [project]
 name = "camels-gb-benchmark"
 version = "1.0.0"
-description = "Benchmarking differentiable HBV models against an LSTM across Great Britain: performance and explainability"
+description = "Performance and explainability of two HBV-inspired differentiable models against an LSTM across Great Britain"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.12"

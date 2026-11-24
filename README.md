@@ -1,9 +1,9 @@
-# Benchmarking differentiable hydrological models across Great Britain
+# Performance and explainability of two HBV-inspired differentiable models against an LSTM across Great Britain
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24477645.svg)](https://doi.org/10.5281/zenodo.24477645)
 
-Code, results and figures for the paper *Benchmarking differentiable hydrological models across Great Britain:
-performance and explainability* (in preparation).
+Code, results and figures for the paper *Performance and explainability of two HBV-inspired differentiable models
+against an LSTM across Great Britain* (in preparation).
 
 The study compares four rainfall-runoff models on 669 catchments of CAMELS-GB under one protocol:
 

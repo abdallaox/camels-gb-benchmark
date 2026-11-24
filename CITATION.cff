@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or these results, please cite the paper and this archived release."
-title: "Benchmarking differentiable hydrological models across Great Britain: code and results"
+title: "Performance and explainability of two HBV-inspired differentiable models against an LSTM across Great Britain: code and results"
 version: 1.0.0
 doi: 10.5281/zenodo.24477645
 license: MIT
