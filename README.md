@@ -1,9 +1,9 @@
-# Performance and explainability of two HBV-inspired differentiable models against an LSTM across Great Britain
+# Performance and explainability of two HBV-inspired differentiable models for streamflow prediction across Great Britain
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24477645.svg)](https://doi.org/10.5281/zenodo.24477645)
 
 Code, results and figures for the paper *Performance and explainability of two HBV-inspired differentiable models
-against an LSTM across Great Britain* (in preparation).
+for streamflow prediction across Great Britain* (in preparation).
 
 The study compares four rainfall-runoff models on 669 catchments of CAMELS-GB under one protocol:
 
